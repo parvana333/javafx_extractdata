@@ -11,14 +11,10 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
-
 public class Controller {
-
-
     @FXML
     public Button chooseButton;
     @FXML
@@ -51,29 +47,35 @@ public class Controller {
         if (mainFilePath != null && RNN.length() >= 12) {
             errormessage.setText(" ");
             Methods methods = new Methods();
-            String transid = methods.findRNN(file, RNN);
-            List<String> id = methods.findId(file, transid);
-            methods.createDoc(id, mainFilePath, file.getName().substring(0, file.getName().length() - 4) + ".docx", RNN);
-            //for second window
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FinalWindow.fxml"));
-            Parent root1 = (Parent) fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setTitle("Final Window");
-            stage.setScene(new Scene(root1));
-            stage.show();
+            String transid=methods.findRNN(file, RNN);
+            if(transid.isEmpty()){
+               errormessage.setText("There is not id for this RNN");
+            }
+            else if(transid.equals("no file")){
+                errormessage.setText("Check your file");
+            }
+            else{
+                List<String> id = methods.findId(file, transid);
+                String notification = methods.createDoc(id, mainFilePath, file.getName().substring(0, file.getName().length() - 4) + ".docx", RNN);
+                if(notification.equals("ok")){
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FinalWindow.fxml"));
+                    Parent root1 = (Parent) fxmlLoader.load();
+                    Stage stage = new Stage();
+                    stage.setTitle("Final Window");
+                    stage.setScene(new Scene(root1));
+                    stage.show();
+                }
+                else{
+                    errormessage.setText("something went wrong, check your docx file being closed");
+                }
+                //for second window
+            }
 
         } else if (mainFilePath == null) {
             errormessage.setText("Please,choose proper file");
         } else {
             errormessage.setText("Check your RNN");
         }
-
-
-
-
-
     }
-
-
     // end of controller
 }
