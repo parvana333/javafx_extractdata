@@ -12,7 +12,7 @@
 
     <Label text="Choose File: " GridPane.columnIndex="0" GridPane.rowIndex="1" />
     <Button fx:id="chooseButton" onAction="#handleChooseButtonClick" text="choose file"  GridPane.columnIndex="1"  GridPane.rowIndex="1"/>
-
+    <Text fx:id="chosenFile"  GridPane.columnIndex="2" GridPane.rowIndex="1"/>
     <Label text="Enter RRN: " GridPane.columnIndex="0" GridPane.rowIndex="2" />
     <TextField fx:id="textfield" GridPane.columnIndex="1" GridPane.rowIndex="2" />
     <Text fx:id="errormessage" GridPane.columnIndex="1" GridPane.rowIndex="3" />

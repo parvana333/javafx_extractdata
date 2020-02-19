@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact name="com.extract_data:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/com_extract_data_jar</output-path>
+    <root id="root">
+      <element id="archive" name="com.extract_data.jar">
+        <element id="module-output" name="com.extract_data" />
+      </element>
+      <element id="directory" name="lib">
+        <element id="library" level="project" name="commons-codec-1.13" />
+        <element id="library" level="project" name="commons-collections4-4.4" />
+        <element id="library" level="project" name="poi-4.1.1" />
+      </element>
+    </root>
+  </artifact>
+</component>

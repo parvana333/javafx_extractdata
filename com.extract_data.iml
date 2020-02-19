@@ -7,36 +7,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Desktop/java_cup/poi-4.1.1/poi-4.1.1.jar!/" />
-          <root url="jar://$USER_HOME$/Desktop/java_cup/poi-4.1.1/poi-excelant-4.1.1.jar!/" />
-          <root url="jar://$USER_HOME$/Desktop/java_cup/poi-4.1.1/poi-ooxml-4.1.1.jar!/" />
-          <root url="jar://$USER_HOME$/Desktop/java_cup/poi-4.1.1/poi-ooxml-schemas-4.1.1.jar!/" />
-          <root url="jar://$USER_HOME$/Desktop/java_cup/poi-4.1.1/poi-scratchpad-4.1.1.jar!/" />
-          <root url="jar://$USER_HOME$/Desktop/java_cup/poi-4.1.1/xmlbeans-3.1.0.jar!/" />
-          <root url="file://$USER_HOME$/Desktop" />
-        </CLASSES>
-        <JAVADOC>
-          <root url="file://$USER_HOME$/Desktop/java_cup/poi-4.1.1/docs/apidocs/dev" />
-          <root url="file://$USER_HOME$/Desktop/weka-3-9-1/doc" />
-        </JAVADOC>
-        <SOURCES>
-          <root url="file://$USER_HOME$/Desktop" />
-          <root url="file://$USER_HOME$/Desktop/apache-tomcat-9.0.27/apache-tomcat-9.0.27/webapps/docs/appdev/sample/src" />
-          <root url="file://$USER_HOME$/Desktop/apache-tomcat-9.0.27/apache-tomcat-9.0.27/webapps/examples/WEB-INF/classes" />
-          <root url="file://$USER_HOME$/Desktop/apache-tomcat-9.0.27/apache-tomcat-9.0.27/webapps/examples/WEB-INF/jsp/applet" />
-          <root url="file://$USER_HOME$/Desktop/apache-tomcat-9.0.27/apache-tomcat-9.0.27/webapps/examples/jsp/plugin/applet" />
-          <root url="file://$USER_HOME$/Desktop/apache-tomcat-9.0.27/apache-tomcat-9.0.27/work/Catalina/localhost/ROOT" />
-          <root url="file://$USER_HOME$/Desktop/apache-tomcat-9.0.29/webapps/docs/appdev/sample/src" />
-          <root url="file://$USER_HOME$/Desktop/apache-tomcat-9.0.29/webapps/examples/WEB-INF/classes" />
-          <root url="file://$USER_HOME$/Desktop/apache-tomcat-9.0.29/webapps/examples/WEB-INF/jsp/applet" />
-          <root url="file://$USER_HOME$/Desktop/apache-tomcat-9.0.29/webapps/examples/jsp/plugin/applet" />
-        </SOURCES>
-        <jarDirectory url="file://$USER_HOME$/Desktop" recursive="false" />
-        <jarDirectory url="file://$USER_HOME$/Desktop" recursive="false" type="SOURCES" />
-      </library>
-    </orderEntry>
+    <orderEntry type="library" name="poi-4.1.1" level="project" />
+    <orderEntry type="library" name="commons-collections4-4.4" level="project" />
+    <orderEntry type="library" name="commons-codec-1.13" level="project" />
   </component>
 </module>
